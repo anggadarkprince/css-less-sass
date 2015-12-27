@@ -5465,13 +5465,13 @@ blockquote cite:before {
 }
 
 @font-face {
-  font-family: 'OpensansRegular';
+  font-family: 'Opensans Regular';
   src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'OpensansItalic';
+  font-family: 'Opensans Italic';
   src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
@@ -5585,4 +5585,75 @@ hr {
   margin: 48px 0;
   border: none;
   background-color: #EEE;
+}
+
+/* Theme */
+/* Typography */
+/* line 2, ../sass/theme/_theme.scss */
+body {
+  color: #454A4E;
+  font: 16px/24px "Opensans Regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 7, ../sass/theme/_theme.scss */
+a {
+  color: #F2604A;
+}
+/* line 10, ../sass/theme/_theme.scss */
+a:hover {
+  color: #191919;
+}
+
+/* line 15, ../sass/theme/_theme.scss */
+h1, h2, h3, h4, h5 {
+  margin-bottom: 1.3125rem;
+  color: #191919;
+  font-weight: normal;
+}
+
+/* line 21, ../sass/theme/_theme.scss */
+h1 {
+  font-size: 3.375rem;
+  font-weight: bold;
+}
+
+/* line 26, ../sass/theme/_theme.scss */
+h2 {
+  font-size: 2.25rem;
+}
+
+/* line 30, ../sass/theme/_theme.scss */
+h3 {
+  font-size: 1.5rem;
+  color: #8C9296;
+}
+
+/* line 35, ../sass/theme/_theme.scss */
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* line 40, ../sass/theme/_theme.scss */
+h5 {
+  font-family: "Opensans Regular", Helvetica, Arial, sans-serif;
+  font-size: .75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 47, ../sass/theme/_theme.scss */
+h6 {
+  font-family: "Opensans Regular", Helvetica, Arial, sans-serif;
+  font-size: .444rem;
+}
+
+/* line 52, ../sass/theme/_theme.scss */
+blockquote cite {
+  color: #8C9296;
+}
+
+/* line 56, ../sass/theme/_theme.scss */
+.t-margin {
+  margin-bottom: 48px;
 }
