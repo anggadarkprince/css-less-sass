@@ -5522,6 +5522,11 @@ blockquote cite:before {
   padding: 3rem 0 0;
 }
 
+/* line 44, ../sass/layout/_header.scss */
+.l-featured-image {
+  display: block;
+}
+
 /* line 1, ../sass/layout/_main.scss */
 .l-list-unstyled, .l-list-inline {
   margin: 0;
@@ -5656,4 +5661,80 @@ blockquote cite {
 /* line 56, ../sass/theme/_theme.scss */
 .t-margin {
   margin-bottom: 48px;
+}
+
+/* Header */
+/* line 61, ../sass/theme/_theme.scss */
+.t-beveled {
+  border-bottom: 4px solid #F4F4F4;
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* line 66, ../sass/theme/_theme.scss */
+.logo a {
+  color: #454A4E;
+}
+
+/* Main banner */
+/* line 71, ../sass/theme/_theme.scss */
+.t-main-banner {
+  background-color: #55ABC7;
+  -moz-box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
+}
+/* line 76, ../sass/theme/_theme.scss */
+.t-main-banner h1, .t-main-banner h3, .t-main-banner p {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 82, ../sass/theme/_theme.scss */
+.t-main-banner hr {
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Button */
+/* line 89, ../sass/theme/_theme.scss */
+.btn {
+  background-color: #F8F8F8;
+  color: #454A4E;
+  border-color: #c5c5c5;
+  -moz-box-shadow: 0, -2px 0 0 #c5c5c5 inset;
+  -webkit-box-shadow: 0, -2px 0 0 #c5c5c5 inset;
+  box-shadow: 0, -2px 0 0 #c5c5c5 inset;
+}
+/* line 95, ../sass/theme/_theme.scss */
+.btn:hover {
+  background-color: #ebebeb;
+}
+
+/* line 100, ../sass/theme/_theme.scss */
+.btn-primary {
+  background-color: #F2604A;
+  color: #FFF;
+  border-color: #c8270e;
+  -moz-box-shadow: 0 -2px 0 0 #c8270e inset;
+  -webkit-box-shadow: 0 -2px 0 0 #c8270e inset;
+  box-shadow: 0 -2px 0 0 #c8270e inset;
+}
+/* line 106, ../sass/theme/_theme.scss */
+.btn-primary:hover {
+  background-color: #f04b32;
+}
+
+/* line 111, ../sass/theme/_theme.scss */
+.btn-secondary {
+  background-color: #43484B;
+  color: #FFF;
+  border-color: #131415;
+  -moz-box-shadow: 0 -2px 0 0 #131415 inset;
+  -webkit-box-shadow: 0 -2px 0 0 #131415 inset;
+  box-shadow: 0 -2px 0 0 #131415 inset;
+}
+/* line 117, ../sass/theme/_theme.scss */
+.btn-secondary:hover {
+  background-color: #373b3e;
 }
