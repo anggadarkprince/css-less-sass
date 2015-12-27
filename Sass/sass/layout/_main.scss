@@ -5,8 +5,8 @@
 }
 
 .l-image-well{
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4.5em;
+  width: 4.5em;
   margin-right: 1.5rem;
   text-align: center;
   @include float-left;
@@ -16,7 +16,11 @@
   }
 }
 
+.l-text-well{
+  margin-left: 6em;
+}
+
 .l-callout{
-  padding: 3rem;
+  padding: 3em;
   @include border-radius(5px);
 }

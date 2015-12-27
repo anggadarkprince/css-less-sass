@@ -83,6 +83,14 @@ blockquote cite{
     width: 75%;
     background-color: rgba(255, 255, 255, .4);
   }
+  
+  a{
+    margin-right: 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 
 /* Button */
@@ -90,7 +98,7 @@ blockquote cite{
   background-color: $color-1;
   color: $color-text;
   border-color: darken($color-1, 20%);
-  @include box-shadow(0, -2px 0 0 darken($color-1, 20%) inset);
+  @include box-shadow(0 -2px 0 0 darken($color-1, 20%) inset);
 
   &:hover{
     background-color: darken($color-1, 5%);
@@ -117,4 +125,40 @@ blockquote cite{
   &:hover{
     background-color: darken($color-2, 5%);
   }
+}
+
+/* Lists */
+.l-image-well{
+  background-color: #f7f7f7;
+  @include border-radius(3px);
+
+  img{
+    margin-top: .75rem;
+  }
+}
+
+.l-list-divided li{
+  border-left: 1px solid $color-hr;
+}
+
+/* Callout */
+.t-callout{
+  background-color: $color-callout;
+
+  h2{
+    margin-top: 0;
+    color: #FFF;
+  }
+
+  h3{
+    margin-bottom: 0;
+  }
+}
+
+/* Footer */
+.social-icon{
+  background-color: $color-hr;
+  color: $color-light-text;
+
+  @include border-radius(3px)
 }

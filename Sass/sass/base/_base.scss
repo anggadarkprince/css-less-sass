@@ -15,11 +15,11 @@ blockquote{
   font-style: italic;
   
   cite{
-    font-size: .75rem;
+    font-size: .75em;
     font-style: normal;
 
     &:before{
-      content: "-";
+      content: "- ";
     }
   }
 }

@@ -2088,12 +2088,12 @@ blockquote {
 }
 /* line 17, ../sass/base/_base.scss */
 blockquote cite {
-  font-size: .75rem;
+  font-size: .75em;
   font-style: normal;
 }
 /* line 21, ../sass/base/_base.scss */
 blockquote cite:before {
-  content: "-";
+  content: "- ";
 }
 
 /* Welcome to Compass. Use this file to write IE specific override styles.
@@ -5479,13 +5479,13 @@ blockquote cite:before {
 /* Layout */
 /* line 1, ../sass/layout/_header.scss */
 .l-header {
-  padding: 1.5rem 0;
+  padding: 1.5em 0;
 }
 /* line 4, ../sass/layout/_header.scss */
 .l-header .logo {
   margin: 0;
-  font-size: 1.625rem;
-  line-height: 3rem;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 /* line 9, ../sass/layout/_header.scss */
 .l-header .logo a {
@@ -5499,30 +5499,34 @@ blockquote cite:before {
 }
 /* line 19, ../sass/layout/_header.scss */
 .l-list-divided li {
-  padding-left: 1rem;
-  margin-left: 1rem;
+  padding-left: 1em;
+  margin-left: 1em;
   float: left;
 }
+/* line 24, ../sass/layout/_header.scss */
+.l-list-divided li:first-child {
+  border-left: 0;
+}
 
-/* line 27, ../sass/layout/_header.scss */
+/* line 31, ../sass/layout/_header.scss */
 #contact-info p {
   margin: 0;
 }
-/* line 30, ../sass/layout/_header.scss */
+/* line 34, ../sass/layout/_header.scss */
 #contact-info p small {
   text-transform: uppercase;
 }
-/* line 34, ../sass/layout/_header.scss */
+/* line 38, ../sass/layout/_header.scss */
 #contact-info p:last-child {
   font-weight: bold;
 }
 
-/* line 40, ../sass/layout/_header.scss */
+/* line 44, ../sass/layout/_header.scss */
 #main-banner {
-  padding: 3rem 0 0;
+  padding: 3em 0 0;
 }
 
-/* line 44, ../sass/layout/_header.scss */
+/* line 48, ../sass/layout/_header.scss */
 .l-featured-image {
   display: block;
 }
@@ -5536,8 +5540,8 @@ blockquote cite:before {
 
 /* line 7, ../sass/layout/_main.scss */
 .l-image-well {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4.5em;
+  width: 4.5em;
   margin-right: 1.5rem;
   text-align: center;
   float: left;
@@ -5548,11 +5552,21 @@ blockquote cite:before {
 }
 
 /* line 19, ../sass/layout/_main.scss */
+.l-text-well {
+  margin-left: 6em;
+}
+
+/* line 23, ../sass/layout/_main.scss */
 .l-callout {
-  padding: 3rem;
+  padding: 3em;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+.l-footer {
+  display: block;
 }
 
 /* line 8, ../sass/layout/_footer.scss */
@@ -5563,21 +5577,25 @@ blockquote cite:before {
 /* line 13, ../sass/layout/_footer.scss */
 .social-icon {
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.5em;
   text-align: center;
+}
+/* line 21, ../sass/layout/_footer.scss */
+.social-icon i.fa {
+  margin-top: .75em;
 }
 
 /* Modules */
 /* line 1, ../sass/modules/_btn.scss */
 .btn {
   display: inline-block;
-  height: 3rem;
-  padding: 0 1rem;
+  height: 3em;
+  padding: 0 1em;
   outline: none;
   border: 1px solid;
-  font-size: 1.125rem;
+  font-size: 1em;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -5680,7 +5698,7 @@ blockquote cite {
 /* Main banner */
 /* line 71, ../sass/theme/_theme.scss */
 .t-main-banner {
-  background-color: #55ABC7;
+  background-color: #F2604A;
   -moz-box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
   -webkit-box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
@@ -5695,23 +5713,31 @@ blockquote cite {
   width: 75%;
   background-color: rgba(255, 255, 255, 0.4);
 }
+/* line 87, ../sass/theme/_theme.scss */
+.t-main-banner a {
+  margin-right: 10px;
+}
+/* line 90, ../sass/theme/_theme.scss */
+.t-main-banner a:last-child {
+  margin-right: 0;
+}
 
 /* Button */
-/* line 89, ../sass/theme/_theme.scss */
+/* line 97, ../sass/theme/_theme.scss */
 .btn {
   background-color: #F8F8F8;
   color: #454A4E;
   border-color: #c5c5c5;
-  -moz-box-shadow: 0, -2px 0 0 #c5c5c5 inset;
-  -webkit-box-shadow: 0, -2px 0 0 #c5c5c5 inset;
-  box-shadow: 0, -2px 0 0 #c5c5c5 inset;
+  -moz-box-shadow: 0 -2px 0 0 #c5c5c5 inset;
+  -webkit-box-shadow: 0 -2px 0 0 #c5c5c5 inset;
+  box-shadow: 0 -2px 0 0 #c5c5c5 inset;
 }
-/* line 95, ../sass/theme/_theme.scss */
+/* line 103, ../sass/theme/_theme.scss */
 .btn:hover {
   background-color: #ebebeb;
 }
 
-/* line 100, ../sass/theme/_theme.scss */
+/* line 108, ../sass/theme/_theme.scss */
 .btn-primary {
   background-color: #F2604A;
   color: #FFF;
@@ -5720,12 +5746,12 @@ blockquote cite {
   -webkit-box-shadow: 0 -2px 0 0 #c8270e inset;
   box-shadow: 0 -2px 0 0 #c8270e inset;
 }
-/* line 106, ../sass/theme/_theme.scss */
+/* line 114, ../sass/theme/_theme.scss */
 .btn-primary:hover {
   background-color: #f04b32;
 }
 
-/* line 111, ../sass/theme/_theme.scss */
+/* line 119, ../sass/theme/_theme.scss */
 .btn-secondary {
   background-color: #43484B;
   color: #FFF;
@@ -5734,7 +5760,50 @@ blockquote cite {
   -webkit-box-shadow: 0 -2px 0 0 #131415 inset;
   box-shadow: 0 -2px 0 0 #131415 inset;
 }
-/* line 117, ../sass/theme/_theme.scss */
+/* line 125, ../sass/theme/_theme.scss */
 .btn-secondary:hover {
   background-color: #373b3e;
+}
+
+/* Lists */
+/* line 131, ../sass/theme/_theme.scss */
+.l-image-well {
+  background-color: #f7f7f7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 135, ../sass/theme/_theme.scss */
+.l-image-well img {
+  margin-top: .75rem;
+}
+
+/* line 140, ../sass/theme/_theme.scss */
+.l-list-divided li {
+  border-left: 1px solid #EEE;
+}
+
+/* Callout */
+/* line 145, ../sass/theme/_theme.scss */
+.t-callout {
+  background-color: #2D3439;
+}
+/* line 148, ../sass/theme/_theme.scss */
+.t-callout h2 {
+  margin-top: 0;
+  color: #FFF;
+}
+/* line 153, ../sass/theme/_theme.scss */
+.t-callout h3 {
+  margin-bottom: 0;
+}
+
+/* Footer */
+/* line 159, ../sass/theme/_theme.scss */
+.social-icon {
+  background-color: #EEE;
+  color: #8C9296;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }

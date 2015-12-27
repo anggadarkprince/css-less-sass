@@ -1,10 +1,10 @@
 .btn{
   display: inline-block;
-  height: 3rem;
-  padding: 0 1rem;
+  height: 3em;
+  padding: 0 1em;
   outline: none;
   border: 1px solid;
-  font-size: 1.125rem;
+  font-size: 1em;
 
   @include border-radius(3px)
 }
